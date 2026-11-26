@@ -449,6 +449,51 @@ nav a:hover {
 /* EDUCACIÓN Y CURSOS */
 
 
+/* EDUCACIÓN Y CURSOS */
+
+.cursos {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    padding: 85px 8%;
+    background-color: var(--lavanda-claro);
+    align-items: stretch;
+}
+
+/* Tarjeta de educación */
+.educacion {
+    padding: 35px;
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título de educación */
+.educacion h2 {
+    color: var(--texto);
+    margin-bottom: 25px;
+}
+
+.educacion h3 {
+    color: var(--texto);
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+.educacion-item {
+    margin-bottom: 20px;
+}
+
+.educacion-item p,
+.educacion-item span {
+    color: var(--texto-secundario);
+}
+
+/* Tarjeta de cursos */
 .curso-certificaciones {
     padding: 35px;
     background-color: var(--blanco);
@@ -458,9 +503,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
 
-    text-align: center;
+    text-align: left;
 }
 
 .curso-certificaciones h3 {
@@ -485,7 +530,6 @@ nav a:hover {
     color: var(--texto);
     font-weight: bold;
 }
-
 
 
 /* CONTACTO */
@@ -821,3 +865,4 @@ nav a:hover {
         padding: 18px;
     }
 }
+
